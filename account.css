@@ -1,0 +1,316 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+
+}
+
+.top-header{
+    background: #e2e2e2;
+    color: #000000;
+    font-size: 0.8rem;
+    padding: 10px 10px 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background: #f8f8f8;
+    padding: 20px 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.logo h1 {
+    color: #333;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 60px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+
+.header-icons a {
+    color: #333;
+    text-decoration: none;
+}
+
+
+
+
+/* Centering the main container with Flexbox */
+.main-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Section styling */
+.login-section, .register-section {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 500px; /* Adjusted width for responsive design */
+    margin: 0 20px; /* Space between login and register sections */
+}
+
+h1 {
+    font-size: 24px;
+    color: black;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+button {
+    width: 100%;
+    background-color: black;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background-color: rgb(85, 85, 85);
+}
+
+.links {
+    text-align: center;
+}
+
+.links a {
+    color: blue;
+    text-decoration: none;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+    }
+
+    .login-section, .register-section {
+        width: 100%;
+        max-width: 400px;
+        margin: 10px 0;
+    }
+}
+
+
+
+
+/* Footer */
+footer {
+    background-color: #f8f8f8;
+    padding: 50px 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    border-top: 1px solid #ddd;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    flex: 1;
+    margin: 20px;
+}
+
+.footer-column h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.footer-column p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+}
+
+.social-icons {
+    margin-top: 15px;
+}
+
+.social-icons a img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.newsletter-form {
+    display: flex;
+    margin-top: 10px;
+}
+
+.newsletter-form input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    flex: 1;
+}
+
+.newsletter-form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+.newsletter-form button:hover {
+    background-color: #555;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    border-top: 1px solid #ddd;
+    font-size: 12px;
+    color: #666;
+    margin-top: 30px;
+}
+
+.footer-bottom-left p {
+    margin: 5px 0;
+}
+
+.footer-bottom-right img {
+    width: 40px;
+    height: auto;
+    margin-left: 15px;
+}
+
+/* General responsive styles */
+@media (max-width: 768px) {
+
+    /* HEADER */
+    /* Reduce hero section text size */
+    .hero-content h2 {
+        font-size: 2.5rem; /* Reduce heading size for mobile */
+    }
+
+    .hero-content p {
+        font-size: 16px; /* Slightly smaller paragraph text */
+    }
+
+    /* Stack nav items vertically */
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    nav ul li {
+        margin-left: 0;
+    }
+
+
+
+    /* FOOTER */
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-column {
+        margin: 20px 0; /* Space out columns vertically */
+    }
+
+    /* Reduce footer font sizes */
+    .footer-column h4 {
+        font-size: 16px;
+    }
+
+    .footer-column p, .footer-column ul li a {
+        font-size: 12px;
+    }
+}
+
+/* Further reductions for very small screens */
+@media (max-width: 480px) {
+    .hero-content h2 {
+        font-size: 2rem; /* Further reduce for very small screens */
+    }
+
+}
